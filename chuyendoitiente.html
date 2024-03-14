@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>Change Currency</title>
+</head>
+<body>
+<form action="">
+<h1>Change Currency</h1>
+<label for="amount">Amount:</label>
+<input type="number" id="amount">
+
+<label for="fromCurrency">From Currency:</label>
+<select id="fromCurrency">
+    <option class="vnd" value="vnd">VietNamDong</option>
+    <option class="usd" value="usd">USD</option>
+</select>
+
+<label for="toCurrency">To Currency:</label>
+<select id="toCurrency">
+    <option class="usd" value="usd">USD</option>
+    <option class="vnd" value="vnd">VietNamDong</option>
+</select>
+
+<button type="button" onclick="convertCurrency()">Convert</button>
+
+<p id="result"></p>
+</form>
+</body>
+</html>
+<script src="chuyendoitiente.js"></script>
