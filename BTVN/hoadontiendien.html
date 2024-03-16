@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tiền điện</title>
+</head>
+<body>
+<h1>Tính toán tiền Điện</h1>
+    <form>
+        <label for="chiSoDienCu">Chỉ số Điện cũ</label><br>
+        <input type="number" id="chiSoDienCu"><br>
+        <label for="chiSoDienMoi">Chỉ số Điện mới</label><br>
+        <input type="number" id="chiSoDienMoi"><br>
+        <label for="donGiaDien1">Giá Điện theo Bậc thang 1</label><br>
+        <input type="number" id="donGiaDien1"><br>
+        <label for="donGiaDien2">Giá Điện theo Bậc thang 2</label><br>
+        <input type="number" id="donGiaDien2"><br>
+        <label for="donGiaDien3">Giá Điện theo Bậc thang 3</label><br>
+        <input type="number" id="donGiaDien3"><br>
+        <label for="donGiaDien4">Giá Điện theo Bậc thang 4</label><br>
+        <input type="number" id="donGiaDien4"><br>
+        <label for="donGiaDien5">Giá Điện theo Bậc thang 5</label><br>
+        <input type="number" id="donGiaDien5"><br>
+        <label for="donGiaDien6">Giá Điện theo Bậc thang 6</label><br>
+        <input type="number" id="donGiaDien6"><br>
+        <label>Phí cố định (Thuế GTGT 8%)</label><br>
+        <br>
+        <button type="button" onclick="tinhTienDien()">Tính Toán</button>
+        <br>
+        <p id="tongTienThanhToan"></p>
+    </form>
+    <table border="1" style="border-collapse: collapse; width: 1000px; text-align: center">
+        <tr>
+            <th>Bậc thang</th>
+            <th>Số điện</th>
+            <th>Đơn giá</th>
+        </tr>
+        <tr>
+            <td>Bậc thang 1</td>
+            <td>0-50</td>
+            <td>1.806đ/kWh</td>
+        </tr>
+        <tr>
+            <td>Bậc thang 2</td>
+            <td>51-100</td>
+            <td>1.866đ/kWh</td>
+        </tr>
+        <tr>
+            <td>Bậc thang 3</td>
+            <td>101-200</td>
+            <td>2.167đ/kWh</td>
+        </tr>
+        <tr>
+            <td>Bậc thang 4</td>
+            <td>201-300</td>
+            <td>2.729đ/kWh</td>
+        </tr>
+        <tr>
+            <td>Bậc thang 5</td>
+            <td>301-400</td>
+            <td>3.050đ/kWh</td>
+        </tr>
+        <tr>
+            <td>Bậc thang 6</td>
+            <td>Trên 400</td>
+            <td>3.151đ/kWh</td>
+        </tr>
+    </table>
+</body>
+</html>
+<script src="hoadontiendien.js"></script>

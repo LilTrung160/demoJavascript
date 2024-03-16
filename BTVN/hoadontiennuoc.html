@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tiền nước</title>
+</head>
+<body>
+<h1>Tính toán tiền Nước</h1>
+<form>
+    <label for="chiSoNuocCu">Chỉ số Nước cũ</label><br>
+    <input type="number" id="chiSoNuocCu"><br>
+    <label for="chiSoNuocMoi">Chỉ số Nước mới</label><br>
+    <input type="number" id="chiSoNuocMoi"><br>
+    <label for="donGiaNuoc1">Giá Nước mức 10m³ đầu tiên</label><br>
+    <input type="number" id="donGiaNuoc1"><br>
+    <label for="donGiaNuoc2">Giá Nước mức 10m³ đến 20m³</label><br>
+    <input type="number" id="donGiaNuoc2"><br>
+    <label for="donGiaNuoc3">Giá Nước mức 20m³ đến 30m³</label><br>
+    <input type="number" id="donGiaNuoc3"><br>
+    <label for="donGiaNuoc4">Giá Nước mức trên 30m³</label><br>
+    <input type="number" id="donGiaNuoc4"><br>
+    <label>Phí cố định (Thuế GTGT 5% và phí Bảo vệ Môi trường 10%)</label><br>
+    <br>
+    <button type="button" onclick="tinhTienNuoc()">Tính Toán</button>
+    <br>
+    <p id="tongTienNuoc"></p>
+</form>
+<table border="1" style="border-collapse: collapse; width: 500px; text-align: center">
+    <tr>
+        <th>Mức sử dụng nước (m³/tháng/hộ)</th>
+        <th>Đơn giá</th>
+    </tr>
+    <tr>
+        <td>Mức 10m³ đầu tiên</td>
+        <td>5973đ/m³</td>
+    </tr>
+    <tr>
+        <td>Mức 10m³ đến 20m³</td>
+        <td>9900đ/m³</td>
+    </tr>
+    <tr>
+        <td>Mức 20m³ đến 30m³</td>
+        <td>16000/m³</td>
+    </tr>
+    <tr>
+        <td>Mức trên 30m³</td>
+        <td>27000/m³</td>
+    </tr>
+</table>
+</body>
+</html>
+<script src="hoadontiennuoc.js"></script>
