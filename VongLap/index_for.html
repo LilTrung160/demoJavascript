@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành: Sử dụng vòng lặp for</title>
+</head>
+<body>
+    <h2>Bài 1:</h2>
+    <p id="demo1"></p>
+    <h2>Bài 2:</h2>
+    <form>
+        <label for="number">Nhập vào số cần tính tổng từ 1:</label><br>
+        <input type="number" id="number">
+        <button type="button" onclick="showTotal()">Tính toán</button>
+        <br>
+    </form>
+    <p id="demo2"></p>
+    <script>
+    /*script bài 1*/
+        let text = "";
+        let i;
+        for (i = 0; i <= 5; i++){
+            text += "The number is " + i + "<br>";
+        }
+        document.getElementById('demo1').innerHTML = text;
+    /*scrip bài 2*/
+        function showTotal(){
+            let num = document.getElementById('number').value;
+            let total = 0;
+            let j = 1;
+            for (; j <= num; j+=1){
+                total += j;
+            }
+            document.getElementById('demo2').innerHTML = total;
+        }
+    </script>
+</body>
+</html>
