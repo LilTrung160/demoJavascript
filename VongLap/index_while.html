@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành: Sử dụng While</title>
+</head>
+<body>
+    <script>
+        let total = 0;
+        let input = prompt("Nhập vào một số:");
+        while (parseInt(input) !== -1) {
+            alert("Giá trị nhập: " + input);
+            total += parseInt(input);
+            input = prompt("Nhập vào một số:");
+        }
+        alert("Tổng các giá trị: " + total);
+    </script>
+</body>
+</html>
