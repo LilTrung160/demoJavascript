@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        //là những số có ước là 1 và chính nó và lớn hơn 1
+        let count = 0; //tạo biến đếm
+        let j = 2; //tạo biến j là các số nst cần check
+        while (count < 20){
+            //check j có là snt
+            let n = j;
+            let check = true;
+            for(let i = 2; i < n; i++){
+                if(n % i === 0){
+                    check = false;
+                    break;
+                }
+            }
+            if(check){
+                count++;
+                document.write(j + " ");
+            }
+            //tăng giá trị j lên để kiểm tra
+            j++;
+        }
+    </script>
+</body>
+</html>
