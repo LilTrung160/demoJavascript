@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 1</title>
+</head>
+<body>
+    <script>
+            let num = prompt("How many points do you want to add to the list?");
+            let arr = [];
+            for (let i = 0; i < num; i++) {
+                let n = +prompt("Enter point:");
+                arr.push(n);
+            }
+        function findAvg(){
+            let sum = 0;
+            for (let i = 0; i < arr.length; i++){
+                sum += arr[i];
+            }
+            return sum / arr.length;
+        }
+        console.log("The average point of this point list: " + findAvg());
+    </script>
+</body>
+</html>

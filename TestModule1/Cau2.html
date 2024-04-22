@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 2</title>
+</head>
+<body>
+    <script>
+        function insertNumberToArray(arr, x, index) {
+            if (index < 0 || index > arr.length) {
+                return arr;
+            }
+            const newArr = [...arr];
+
+            newArr.splice(index, 0, x);
+
+            return newArr;
+        }
+        let arr = [1, 2, 3, 4, 5];
+        const newArr1 = insertNumberToArray(arr, 10, 2);
+        console.log(newArr1);
+
+        let newArr2 = insertNumberToArray(arr, 8, -1);
+        console.log(newArr2);
+
+        let newArr3 = insertNumberToArray(arr, 12, 10);
+        console.log(newArr3);
+    </script>
+</body>
+</html>
