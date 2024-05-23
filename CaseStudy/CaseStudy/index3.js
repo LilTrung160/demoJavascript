@@ -1,3 +1,0 @@
-function caro3(){
-
-}
